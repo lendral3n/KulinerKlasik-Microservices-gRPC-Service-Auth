@@ -8,7 +8,11 @@ import (
 
 type Config struct {
 	Port         string `mapstructure:"PORT"`
-	DBUrl        string `mapstructure:"DB_URL"`
+	DB_USERNAME  string `mapstructure:"DBUSER"`
+	DB_PASSWORD  string `mapstructure:"DBPASS"`
+	DB_HOSTNAME  string `mapstructure:"DBHOST"`
+	DB_PORT      int    `mapstructure:"DBPORT"`
+	DB_NAME      string `mapstructure:"DBNAME"`
 	JWTSecretKey string `mapstructure:"JWT_SECRET_KEY"`
 }
 
